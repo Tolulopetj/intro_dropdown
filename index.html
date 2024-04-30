@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <div class="container">
+    <div class="mobile_menu">
+        <div><img src="images/icon-close-menu.svg"  class="icon_close"></div>
+        <div class="mobile_menu_navigations">
+          <button class="accordion">Features <img src="images/icon-arrow-down.svg" alt="" class="icon-arrow"></button>
+        <div class="panel">
+          <ul>
+            <li><img src="images/icon-todo.svg" alt=""><a href="#">Todo List</a></li>
+            <li><img src="images/icon-calendar.svg" alt=""><a href="#">Calendar</a></li>
+            <li><img src="images/icon-reminders.svg" alt=""><a href="#">Reminders</a></li>
+            <li><img src="images/icon-planning.svg" alt=""><a href="#">Planning</a></li>
+          </ul>
+        </div>
+        <button class="accordion">Company <img src="images/icon-arrow-down.svg" alt="" class="icon-arrow"></button>
+        <div class="panel">
+          <ul>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <ul class="career_about">
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="mobile_log">
+          <a href="#">Login</a>
+          <button class="reg">Register</button>
+        </div>  
+        </div>
+    </div>
+    <header>
+      <!-- <div class="menu-overlay"></div> -->
+      <div class="logo_menu">
+        <div class="logo">
+          <img class="company-logo" src="images/logo.svg" alt="">
+        </div>  
+        <nav class="header_nav">
+          <ul>
+            <li><a href="#">Features <img src="images/icon-arrow-down.svg" alt=""></a>
+              <ul class="dropdown">
+                <li><img src="images/icon-todo.svg" alt=""><a href="#">Todo List</a></li>
+                <li><img src="images/icon-calendar.svg" alt=""><a href="#">Calendar</a></li>
+                <li><img src="images/icon-reminders.svg" alt=""><a href="#">Reminders</a></li>
+                <li><img src="images/icon-planning.svg" alt=""><a href="#">Planning</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Company <img src="images/icon-arrow-down.svg" alt=""></a>
+              <ul class="dropdown">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="log">
+        <a href="#">Login</a>
+        <button>Register</button>
+      </div> 
+      <div class="hamburger_control">
+        <div class="hamburger_div"> <img src="images/icon-menu.svg" alt="" class="hamburger_icon"></div>
+        <!-- <div class="hamburger_div"> <img src="images/icon-close-menu.svg" alt="" class="icon_close"></div> -->
+      </div>  
+    </header>   
+    <div class="main">
+      <div class="section-1">
+        <div>
+          <p>Make<br class="break"> remote work</p>
+          <h6>
+          Get your team in sync, no matter your <br class="break"> location.<br class="breaks"> Streamline processes, 
+          create <br class="break"> team rituals,and <br class="breaks"> watch productivity soar.
+          </h6>
+          <button>Learn more</button> <br>
+          <div class="images">
+            <img src="images/client-databiz.svg" height="15px" class="brand_names">
+            <img src="images/client-audiophile.svg" height="15px" class="brand_names">
+            <img src="images/client-meet.svg" height="15px" class="brand_names">
+            <img src="images/client-maker.svg" height="15px" class="brand_names">
+          </div>
+        </div>
+      </div>
+      <div class="section-2">
+        <img class="hero" src="images/image-hero-desktop.png" alt="">
+      </div>
+    </div> 
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tolulope Opeibi</a>.
+  </div> -->
+  <script src="js/app.js"></script>
+</body>
+</html>
